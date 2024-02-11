@@ -1,22 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ultimate_div_mod.c                              :+:      :+:    :+:   */
+/*   ft_rev_int_tab.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ysakarya <ysakarya@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/30 09:04:55 by ysakarya          #+#    #+#             */
-/*   Updated: 2024/01/30 09:13:15 by ysakarya         ###   ########.fr       */
+/*   Created: 2024/01/31 00:17:51 by ysakarya          #+#    #+#             */
+/*   Updated: 2024/01/31 08:32:08 by ysakarya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_ultimate_div_mod(int *a, int *b)
+void	ft_rev_int_tab(int *tab, int size)
 {
-	int	tmdiv;
-	int	tmmod;
-	
-	int tmdiv = *a / *b;
-	int tmmod = *a % *b;
-	*a = tmdiv;
-	*b = tmmod;
+	int	tmp;
+	int	i;
+
+	i = 0;
+	while (i < (size / 2))
+	{
+		tmp = tab[i];
+		tab[i] = tab[size - 1 - i];
+		tab[size - 1 - i] = tmp;
+		i++;
+	}
 }

@@ -6,14 +6,14 @@
 /*   By: ysakarya <ysakarya@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/30 08:01:02 by ysakarya          #+#    #+#             */
-/*   Updated: 2024/01/30 08:06:23 by ysakarya         ###   ########.fr       */
+/*   Updated: 2024/01/31 08:27:59 by ysakarya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_swap(int *a, int *b)
 {
 	int	tmp;
-	
+
 	tmp = *a;
 	*a = *b;
 	*b = tmp;
